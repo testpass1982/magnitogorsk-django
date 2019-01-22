@@ -1,0 +1,198 @@
+// Спецификация
+
+body {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+@media (min-width: 360px) {
+    .container {
+        max-width: 1550px;
+    }
+}
+
+// Хедр
+
+.header__logo {
+    padding: 35px 0px 45px;
+    ;
+}
+
+.center__logo {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @media screen and (max-width: 320px) {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+.number {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 0;
+    @media screen and (max-width: 696px) {
+        font-size: 24px;
+    }
+}
+
+.adres__block {
+    margin-top: -10px;
+    a {
+        color: #5e7daf;
+        text-decoration: underline;
+    }
+    @media screen and (max-width: 696px) {
+        margin: 0;
+    }
+}
+
+.block__number {
+    text-align: right;
+    @media screen and (max-width: 578px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    @media screen and (max-width: 575px) {
+        text-align: center;
+    }
+}
+
+.number__text__small {
+    margin-bottom: 0;
+}
+
+.feedback {
+    margin-top: -15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: none;
+    color: #5e7daf;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    text-align: right;
+
+    @media screen and (max-width: 320px) {
+        background-color: #5e7daf;
+        padding: 10px 25px;
+        margin-top: 10px;
+        color: #fff;
+        border-radius: 3px;
+        justify-content: center;
+    }
+}
+
+.text__adres {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0;
+
+}
+
+.click__on__map {
+    margin-top: -15px;
+}
+
+.sasp__logo::before {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 45px;
+    left: 0;
+    margin-top: 20px;
+    background: url(/img/logo__sasp.png) center 0 no-repeat;
+}
+
+.sasp__text {
+    margin-left: 80px;
+    color: #002D41;
+    font-weight: 450;
+}
+
+.bg-block-01 {
+    background: url(../img/bgheader.png) no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.bg {
+    background: url(../img/gradient.png) no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+}
+
+// Меню
+.box__line__menu {
+    background-color: #ecf5fe;
+}
+
+// Бэкграунд
+
+.background {
+    background: url(../img/bgheader.png) no-repeat;
+    background-size: cover;
+}
+
+.bg__gradient {
+    background: url(../img/gradient.png) no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    padding: 35px 0px;
+}
+
+.bg__text__head {
+    font-size: 36px;
+    font-weight: 550;
+    color: #000;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bg__text__small {
+    font-size: 16px;
+    font-weight: 450;
+    color: #000;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.bg__text__naks{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bg__line{
+    border-bottom: 1px solid #3eb5f1;
+    width: 15%;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+}
+
+.button__zayavka{
+    background-color: #3eb5f1;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 17px;   
+    font-size: 16px;
+    cursor: pointer;   
+    &:hover{
+        background-color: #35a9e4;
+        transition: 0.2s;
+    }
+}
