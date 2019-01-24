@@ -5,7 +5,9 @@ body {
     font-size: 12px;
     line-height: 1.5;
     background-color: #fff;
+    height: 3000px;
 }
+
 
 @media (min-width: 360px) {
     .container {
@@ -75,6 +77,7 @@ body {
 
 .number__text__small {
     margin-bottom: 0;
+    font-weight: 450;
 }
 
 .feedback {
@@ -138,6 +141,7 @@ body {
     margin-left: 80px;
     color: #002D41;
     font-weight: 450;
+
     @media screen and (max-width: 576px) {
         text-align: left;
     }
@@ -147,6 +151,28 @@ body {
 // Меню
 .box__line__menu {
     background-color: #ecf5fe;
+}
+
+.system__button a {
+    text-decoration: none;
+}
+
+.enter__system {
+    color: #fff;
+
+    &:hover {
+        color: rgb(226, 226, 226);
+    }
+}
+
+.enter__system::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    margin-left: -35px;
+    margin-top: 5px;
+    background: url(../img/enter.png) center 0 no-repeat;
 }
 
 // Бэкграунд
@@ -161,7 +187,7 @@ body {
     background-size: cover;
     color: #fff;
     width: 100%;
-    padding: 35px 0px;
+    padding: 45px 0px;
 }
 
 .bg__text__head {
@@ -173,30 +199,35 @@ body {
 }
 
 .bg__text__small {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 450;
     color: #000;
     vertical-align: middle;
     text-align: center;
     line-height: 1.8;
+
+    @media screen and (max-width: 320px) {
+        font-size: 14px;
+    }
 }
 
 .bg__text__naks {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000;
     vertical-align: middle;
     text-align: center;
+    color: #000000;
 }
 
 .bg__line {
-    border-bottom: 1.5px solid #3eb5f1;
-    width: 5%;
+    border-bottom: 1px solid #3eb5f1;
+    width: 50px;
     vertical-align: middle;
     text-align: center;
     margin: auto;
-    margin-bottom: 30px;
-    ;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .online__zayavka__button {
@@ -230,7 +261,28 @@ body {
     }
 }
 
+.naks__web a {
+    text-decoration: none;
+    color: #696969;
+
+    &:hover {
+        color: #8d8d8d;
+    }
+}
+
+.naks__web {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
 // Контентная часть left column
+
+.box__content {
+    background-color: #fcfcfc;
+}
 
 .header__name {
     color: #000;
@@ -246,7 +298,7 @@ body {
     margin-bottom: 15px;
 }
 
-.box__info__text__small{
+.box__info__text__small {
     margin-left: 15px;
 }
 
@@ -258,16 +310,16 @@ body {
     margin-left: -15px;
     margin-top: 8px;
     background: url(../img/paragraph_arrow.png) center 0 no-repeat;
-  }
+}
 
 
 .info__text__small {
     font-size: 16px;
     font-weight: 450;
-    color: rgb(82, 82, 82);    
+    color: rgb(82, 82, 82);
 }
 
-.header__name__small{
+.header__name__small {
     font-size: 20px;
     font-weight: 500;
     color: #000;
@@ -275,20 +327,25 @@ body {
     margin-bottom: 25px;
 }
 
-.img_box{
+.img_box {
     margin-right: 15px;
+    width: 100px;
+
     @media screen and (max-width: 576px) {
         width: 100%;
     }
 }
 
-.hover__img{
-    background-color: #fff;
+.link__read__more a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0066ac;
 }
+
 
 // Услуги right column
 
-.button__services a{
+.button__services a {
     text-decoration: none;
 }
 
@@ -298,26 +355,99 @@ body {
 }
 
 .box__service {
-    background-color: #f7f7f7;
-    padding: 35px;    
-    width: 600px;
-    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f7f7f7;
+    padding: 35px;
+    // width: 600px;
+    box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
     margin-bottom: 15px;
+    border-left: 1px solid rgb(197, 222, 255);
+
     @media screen and (max-width: 576px) {
         width: 100%;
     }
 }
 
 .box__service:hover {
-    background-color: #f0f0f0;
+    background-color: #fcfcfc;
     transition: 0.2s;
     margin-left: 10px;
+    border-left: 1px solid rgb(39, 133, 255);
 }
 
-.services__name{
+.services__name {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000;
     text-decoration: none;
     margin: 0;
+}
+
+// Новости
+
+.link__read__news {
+    margin-top: -30px;
+}
+
+.link__read__news a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0066ac;
+    font-weight: 450;
+}
+
+.block__news a {
+    text-decoration: none;
+}
+
+.box__news {
+    border: 1px solid #eeeeee;
+    margin-top: 25px;
+    padding: 25px;
+
+    &:hover {
+        box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+        border: 1px solid rgb(197, 222, 255);
+    }
+}
+
+.data__news__main {
+    text-transform: uppercase;
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+}
+
+.box__news__text {
+    color: #000;
+    font-size: 14px;
+    line-height: 1.61;
+}
+
+
+// Информация
+.naks__img__box {
+    background: url(../img/naks_logo.png) no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    width: 250px;
+    height: 162px;
+    align-items: center;
+}
+
+
+.naks__box {
+    padding: 35px;
+    background-color: #4f72ac;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.naks__info__box {
+    margin-bottom: 50px;
+}
+
+.naks__text__box {
+    background-color: rgb(102, 68, 68);
+    font-size: 14px;
+    font-weight: 450;
+    padding: 25px;
+    border-radius: 0px 0px 3px 3px;
 }

@@ -2,7 +2,8 @@ body {
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 12px;
   line-height: 1.5;
-  background-color: #fff; }
+  background-color: #fff;
+  height: 3000px; }
 
 @media (min-width: 360px) {
   .container {
@@ -52,7 +53,8 @@ body {
       text-align: center; } }
 
 .number__text__small {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-weight: 450; }
 
 .feedback {
   margin-top: -15px;
@@ -111,6 +113,23 @@ body {
 .box__line__menu {
   background-color: #ecf5fe; }
 
+.system__button a {
+  text-decoration: none; }
+
+.enter__system {
+  color: #fff; }
+  .enter__system:hover {
+    color: #e2e2e2; }
+
+.enter__system::before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 15px;
+  margin-left: -35px;
+  margin-top: 5px;
+  background: url(../img/enter.png) center 0 no-repeat; }
+
 .background {
   background: url(../img/bgheader.png) no-repeat;
   background-size: cover; }
@@ -120,7 +139,7 @@ body {
   background-size: cover;
   color: #fff;
   width: 100%;
-  padding: 35px 0px; }
+  padding: 45px 0px; }
 
 .bg__text__head {
   font-size: 36px;
@@ -130,27 +149,32 @@ body {
   text-align: center; }
 
 .bg__text__small {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 450;
   color: #000;
   vertical-align: middle;
   text-align: center;
   line-height: 1.8; }
+  @media screen and (max-width: 320px) {
+    .bg__text__small {
+      font-size: 14px; } }
 
 .bg__text__naks {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
   vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+  color: #000000; }
 
 .bg__line {
-  border-bottom: 1.5px solid #3eb5f1;
-  width: 5%;
+  border-bottom: 1px solid #3eb5f1;
+  width: 50px;
   vertical-align: middle;
   text-align: center;
   margin: auto;
-  margin-bottom: 30px; }
+  margin-bottom: 15px;
+  margin-top: 15px; }
 
 .online__zayavka__button {
   vertical-align: middle;
@@ -174,6 +198,21 @@ body {
   .button__zayavka:focus {
     outline: none;
     box-shadow: none; }
+
+.naks__web a {
+  text-decoration: none;
+  color: #696969; }
+  .naks__web a:hover {
+    color: #8d8d8d; }
+
+.naks__web {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px; }
+
+.box__content {
+  background-color: #fcfcfc; }
 
 .header__name {
   color: #000;
@@ -212,13 +251,16 @@ body {
   margin-bottom: 25px; }
 
 .img_box {
-  margin-right: 15px; }
+  margin-right: 15px;
+  width: 100px; }
   @media screen and (max-width: 576px) {
     .img_box {
       width: 100%; } }
 
-.hover__img {
-  background-color: #fff; }
+.link__read__more a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #0066ac; }
 
 .button__services a {
   text-decoration: none; }
@@ -228,31 +270,86 @@ body {
   color: #fff; }
 
 .box__service {
-  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
   padding: 35px;
-  width: 600px;
-  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.03);
-  margin-bottom: 15px; }
+  box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+  margin-bottom: 15px;
+  border-left: 1px solid #c5deff; }
   @media screen and (max-width: 576px) {
     .box__service {
       width: 100%; } }
 
 .box__service:hover {
-  background-color: #f0f0f0;
+  background-color: #fcfcfc;
   transition: 0.2s;
-  margin-left: 10px; }
+  margin-left: 10px;
+  border-left: 1px solid #2785ff; }
 
 .services__name {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
   text-decoration: none;
   margin: 0; }
 
+.link__read__news {
+  margin-top: -30px; }
+
+.link__read__news a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0066ac;
+  font-weight: 450; }
+
+.block__news a {
+  text-decoration: none; }
+
+.box__news {
+  border: 1px solid #eeeeee;
+  margin-top: 25px;
+  padding: 25px; }
+  .box__news:hover {
+    box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+    border: 1px solid #c5deff; }
+
+.data__news__main {
+  text-transform: uppercase;
+  color: #a8a8a8;
+  text-decoration: none; }
+
+.box__news__text {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.61; }
+
+.naks__img__box {
+  background: url(../img/naks_logo.png) no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+  width: 250px;
+  height: 162px;
+  align-items: center; }
+
+.naks__box {
+  padding: 35px;
+  background-color: #4f72ac;
+  border-radius: 3px 3px 0px 0px; }
+
+.naks__info__box {
+  margin-bottom: 50px; }
+
+.naks__text__box {
+  background-color: #664444;
+  font-size: 14px;
+  font-weight: 450;
+  padding: 25px;
+  border-radius: 0px 0px 3px 3px; }
+
 .menu__background {
-  background-color: #ecf5fe;
-  padding: 20px 0px 20px 0px;
-  border-top: 1px solid #f5f5f5; }
+  background-color: #373c41;
+  padding: 20px 35px 20px 35px;
+  border-top: 1px solid #f5f5f5;
+  margin-bottom: 25px; }
 
 .navbar {
   font-size: 16px;
@@ -275,7 +372,7 @@ body {
 
 .menu__navbar .navbar .nav-item .nav-link {
   padding: 0;
-  color: #333333;
+  color: #ffffff;
   font-weight: 450; }
 
 .menu__navbar .navbar-expand-lg .navbar-nav .nav-link {
@@ -283,13 +380,13 @@ body {
 
 .menu__navbar .navbar .nav-item .nav__link__two {
   margin-right: 35px;
-  color: #333333;
+  color: #ffffff;
   font-weight: 450; }
   @media screen and (max-width: 992px) {
     .menu__navbar .navbar .nav-item .nav__link__two {
       padding: 0px 0px 15px;
       font-weight: 200;
-      color: #333333;
+      color: #fff;
       font-weight: 600; } }
 
 @media screen and (max-width: 992px) {
@@ -304,11 +401,12 @@ body {
   color: white; }
 
 .dropdown-menu {
-  margin-top: 15px;
+  margin-top: 20px;
   color: #ecf5fe;
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
   line-height: 2;
-  border: none; }
+  border: none;
+  border-radius: 0px; }
   @media screen and (max-width: 320px) {
     .dropdown-menu {
       font-size: 12px;
