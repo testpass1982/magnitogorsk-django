@@ -2,8 +2,7 @@ body {
   font-family: "Avenir Next Cyr", sans-serif;
   font-size: 12px;
   line-height: 1.5;
-  background-color: #fff;
-  height: 3000px; }
+  background-color: #fff; }
 
 @media (min-width: 360px) {
   .container {
@@ -322,28 +321,217 @@ body {
   font-size: 14px;
   line-height: 1.61; }
 
+.info__block:hover {
+  box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+  transition: 0.2s;
+  margin-top: -5px; }
+
 .naks__img__box {
   background: url(../img/naks_logo.png) no-repeat;
   background-size: cover;
   border-radius: 3px;
-  width: 250px;
-  height: 162px;
-  align-items: center; }
+  width: 200px;
+  height: 142px;
+  margin: 0 auto; }
 
 .naks__box {
-  padding: 35px;
+  padding: 15px;
   background-color: #4f72ac;
   border-radius: 3px 3px 0px 0px; }
 
 .naks__info__box {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 25px; }
 
 .naks__text__box {
-  background-color: #664444;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 450;
+  border-radius: 0px 0px 3px 3px;
+  margin-bottom: 0px; }
+
+.search__box {
+  background: url(../img/search__work.png) no-repeat;
+  background-size: cover;
+  border-radius: 3px; }
+
+.search__color__box {
+  background-color: #0066ac;
+  color: #fff;
+  width: 100%;
+  border-radius: 3px 3px 0px 0px; }
+
+.search__work__link {
+  color: #0066ac;
+  font-size: 16px;
+  float: right;
+  text-align: right; }
+  @media screen and (max-width: 320px) {
+    .search__work__link {
+      margin-top: 15px;
+      float: left;
+      margin-bottom: 15px; } }
+
+.search__box {
   padding: 25px;
-  border-radius: 0px 0px 3px 3px; }
+  border-radius: 3px 3px 0px 0px; }
+
+.search__info__box {
+  margin-bottom: 50px;
+  background-color: #fff;
+  padding: 25px; }
+
+.search__text__box {
+  font-size: 16px;
+  font-weight: 450;
+  border-radius: 0px 0px 3px 3px;
+  margin-bottom: 0px; }
+
+.search__link__text {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 650;
+  color: #fbb52f; }
+
+.search__text__small {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff; }
+
+.journal__box {
+  background-color: #4f72ac;
+  border-radius: 3px 3px 0px 0px;
+  padding: 25px 0px 0px 25px; }
+
+.journal__img__box {
+  background: url(../img/journal.png) no-repeat;
+  background-size: cover;
+  width: 162px;
+  height: 150px;
+  margin-top: -3px; }
+
+.journal__text__small {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0; }
+
+.footer__block {
+  background-color: #f9f9f9;
+  padding: 35px; }
+
+.footer__logo {
+  margin-bottom: 25px; }
+
+.sasp__grey__logo::before {
+  content: '';
+  position: absolute;
+  width: 85px;
+  height: 45px;
+  background: url(/img/logo__sasp_grey.png) center 0 no-repeat;
+  margin-left: -5px; }
+
+.sasp__grey__text {
+  font-size: 12px;
+  color: #979695;
+  margin-top: 55px;
+  margin-bottom: 45px; }
+
+.political__footer {
+  color: #000; }
+
+.line__footer__small {
+  border: 1px solid #e8e8e8;
+  width: 50px;
+  margin-top: 20px;
+  margin-bottom: 15px; }
+
+.prava__footer {
+  font-size: 12px;
+  color: #9c9c9c; }
+
+.header__text__footer {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #4f72ac;
+  margin-bottom: 10px; }
+
+.spisok__footer {
+  padding: 0;
+  line-height: 2;
+  font-size: 14px;
+  margin-bottom: 25px; }
+
+.spisok__footer li {
+  list-style: none;
+  color: #000; }
+
+.spks__link__footer a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0; }
+
+.spks::before {
+  content: '';
+  position: absolute;
+  width: 85px;
+  height: 45px;
+  background: url(/img/spks_logo.png) center 0 no-repeat;
+  margin-left: -20px; }
+
+.spks__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 65px;
+  font-weight: 500;
+  text-decoration: none; }
+
+.number__footer {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 0; }
+
+.consultation__text {
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 450; }
+
+.feedback__footer {
+  margin-top: -15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #5e7daf;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  text-align: right; }
+
+.adres__footer__block {
+  margin-top: 40px;
+  font-weight: 500; }
+
+.adres__footer__text {
+  margin-bottom: 5px; }
+
+.link__open__map {
+  font-size: 12px;
+  font-weight: 400; }
+
+.email__link__footer {
+  font-size: 14px;
+  font-weight: 400; }
+
+.email__text__footer {
+  margin-bottom: 10px; }
+
+.razrabotano {
+  font-size: 12px;
+  font-weight: 350;
+  color: #c2c2c2; }
 
 .menu__background {
   background-color: #373c41;
