@@ -104,8 +104,8 @@ window.onload = function() {
     var $value = $(this).parent().next();  
     $value.addClass("added").text($(this).val().replace(/C:\\fakepath\\/i, ''));
   });
-  $("#phone").mask("+8 (999) 999 - 99 - 99",{completed:function(){alert("Да, этой мой номер");}});
-  $("#phone2").mask("+8 (999) 999 - 99 - 99",{completed:function(){alert("Да, этой мой номер");}});
+  $("#phone").mask("+8 (9999) 999 - 99 - 99",{completed:function(){alert("Да, этой мой номер");}});
+  $("#phone2").mask("+8 (9999) 999 - 99 - 99",{completed:function(){alert("Да, этой мой номер");}});
   };
   
   // require(["popper"], function(popper) {

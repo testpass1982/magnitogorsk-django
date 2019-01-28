@@ -4,7 +4,9 @@ body {
     font-family: "Avenir Next Cyr", sans-serif;
     font-size: 12px;
     line-height: 1.5;
-    background-color: #fff;  
+    background-color: #fff;
+    opacity: 0;
+    transition: .4s;
 }
 
 
@@ -14,7 +16,28 @@ body {
     }
 }
 
+.line__otstup__inside__pages {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.back__to__main {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+
+    a {
+        text-decoration: none;
+        color: #007bff;
+    }
+}
+
+.arrow__back__to__main {
+    margin-right: 5px;
+}
+
 // Хедр
+
 
 .box__items {
     @media screen and (max-width: 576px) {
@@ -51,7 +74,6 @@ body {
     margin-top: -10px;
 
     a {
-        color: #5e7daf;
         text-decoration: underline;
     }
 
@@ -84,12 +106,16 @@ body {
     outline: none;
     background-color: transparent;
     box-shadow: none;
-    color: #5e7daf;
+    color: #4f8ff5;
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
     padding: 0;
     text-align: right;
+
+    a {
+        text-decoration: none;
+    }
 
     @media screen and (max-width: 320px) {
         background-color: #5e7daf;
@@ -390,7 +416,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     color: #0066ac;
-    font-weight: 450;
+    font-weight: 350;
 }
 
 .block__news a {
@@ -548,6 +574,79 @@ body {
 
 // Footer block
 
+// Mob version footer
+
+.mob__version{
+    display: none;
+    @media screen and (max-width: 320px) {
+        display: block;
+    }
+}
+
+.mob__sasp__grey__logo::before {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 45px;
+    background: url(/img/logo__sasp_grey.png) center 0 no-repeat;
+    margin-left: -5px;
+     
+}
+.mob__sasp__grey__text {
+    font-size: 12px;
+    color: #979695;
+    margin-top: 55px;
+    margin-bottom: 45px;
+     
+}
+
+.mob__political__footer {
+    color: #000;
+     
+}
+
+.mob__line__footer__small {
+    border: 1px solid #e8e8e8;
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+}
+.mob__prava__footer {
+    font-size: 12px;
+    color: #9c9c9c;
+    
+}
+
+.mob__spks__link__footer a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mob__spks::before {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 45px;
+    background: url(/img/spks_logo.png) center 0 no-repeat;
+    margin-left: -20px;
+    
+
+}
+
+.mob__spks__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 65px;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+
+// 
+
 .footer__block {
     background-color: #f9f9f9;
     padding: 35px;
@@ -564,6 +663,9 @@ body {
     height: 45px;
     background: url(/img/logo__sasp_grey.png) center 0 no-repeat;
     margin-left: -5px;
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 }
 
 .sasp__grey__text {
@@ -571,10 +673,16 @@ body {
     color: #979695;
     margin-top: 55px;
     margin-bottom: 45px;
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 }
 
 .political__footer {
     color: #000;
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 }
 
 .line__footer__small {
@@ -582,12 +690,17 @@ body {
     width: 50px;
     margin-top: 20px;
     margin-bottom: 15px;
-    ;
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 }
 
 .prava__footer {
     font-size: 12px;
     color: #9c9c9c;
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 }
 
 .header__text__footer {
@@ -595,6 +708,9 @@ body {
     text-transform: uppercase;
     color: #4f72ac;
     margin-bottom: 10px;
+    @media screen and (max-width: 768px) {
+        margin-top: 15px;
+    }
 }
 
 .spisok__footer {
@@ -622,6 +738,9 @@ body {
     height: 45px;
     background: url(/img/spks_logo.png) center 0 no-repeat;
     margin-left: -20px;
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 
 }
 
@@ -632,15 +751,18 @@ body {
     margin-left: 65px;
     font-weight: 500;
     text-decoration: none;
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 }
 
-.number__footer{
+.number__footer {
     font-size: 28px;
     font-weight: 300;
     margin-bottom: 0;
-   }
+}
 
-.consultation__text{
+.consultation__text {
     font-size: 12px;
     margin-bottom: 0;
     font-weight: 450;
@@ -652,39 +774,141 @@ body {
     outline: none;
     background-color: transparent;
     box-shadow: none;
-    color: #5e7daf;
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
     padding: 0;
+    color: #fff;
     text-align: right;
+    a {
+        text-decoration: none;
+
+        @media screen and (max-width: 320px) {
+            color: #fff;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        background-color: #5e7daf;
+        padding: 10px 25px;
+        margin-top: 10px;     
+        border-radius: 3px;
+        justify-content: center;
+    }
+
 }
 
-.adres__footer__block{
-margin-top: 40px;
-font-weight: 500;
+.adres__footer__block {
+    margin-top: 40px;
+    font-weight: 500;
 }
 
-.adres__footer__text{
-margin-bottom: 5px;
+.adres__footer__text {
+    margin-bottom: 0px;
 }
 
-.link__open__map{
-    font-size: 12px;
-    font-weight: 400;
-}
+.click__on__map_footer {   
+    font-weight: 300;
 
-.email__link__footer{
+    @media screen and (max-width: 320px) {
+        font-size: 18px;
+       margin-bottom: 10px;
+    }
+}
+.email__link__footer {
     font-size: 14px;
     font-weight: 400;
 }
 
-.email__text__footer{
+.email__text__footer {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.razrabotano {
+    font-size: 12px;
+    font-weight: 350;
+    color: #c2c2c2;
+}
+
+// Документы
+.header__inside__pages {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 25px;
+
+}
+
+
+.header__doc {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
-.razrabotano{
-    font-size: 12px;
-    font-weight: 350;    
-    color: #c2c2c2;
+.doc__name__list {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+}
+
+.doc__content {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 3px;
+    border-left: 1px solid #c5deff;
+    box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+
+    &:hover {
+        background-color: #f5f5f5;
+        transition: 0.2s;
+        border-left: 1px solid #2785ff;
+
+    }
+}
+
+.doc__name {
+    position: relative;
+    font-size: 15px;
+    color: #275295;
+    padding-left: 55px;
+    margin-bottom: 0;
+}
+
+.doc__name::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 0;
+    background: url(/img/icon__file-01.png) center 0 no-repeat;
+}
+
+.bd-sidebar {
+    position: sticky;
+    top: 4rem;
+    z-index: 1000;
+    height: calc(30vh - 4rem);
+}
+
+//  Политика конфиденциальности
+
+.header__political {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+}
+
+.political__text__small {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
