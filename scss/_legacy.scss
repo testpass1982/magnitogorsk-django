@@ -36,6 +36,13 @@ body {
     margin-right: 5px;
 }
 
+.sider__bar{
+      position: sticky;
+    top: 4rem;
+    z-index: 1000;
+    height: calc(45vh);
+}
+
 // Хедр
 
 
@@ -121,9 +128,12 @@ body {
         background-color: #5e7daf;
         padding: 10px 25px;
         margin-top: 10px;
-        color: #fff;
         border-radius: 3px;
         justify-content: center;
+
+        a {
+            color: #fff;
+        }
     }
 }
 
@@ -576,8 +586,9 @@ body {
 
 // Mob version footer
 
-.mob__version{
+.mob__version {
     display: none;
+
     @media screen and (max-width: 320px) {
         display: block;
     }
@@ -590,19 +601,20 @@ body {
     height: 45px;
     background: url(/img/logo__sasp_grey.png) center 0 no-repeat;
     margin-left: -5px;
-     
+
 }
+
 .mob__sasp__grey__text {
     font-size: 12px;
     color: #979695;
     margin-top: 55px;
     margin-bottom: 45px;
-     
+
 }
 
 .mob__political__footer {
     color: #000;
-     
+
 }
 
 .mob__line__footer__small {
@@ -610,12 +622,13 @@ body {
     width: 50px;
     margin-top: 20px;
     margin-bottom: 15px;
-    
+
 }
+
 .mob__prava__footer {
     font-size: 12px;
     color: #9c9c9c;
-    
+
 }
 
 .mob__spks__link__footer a {
@@ -631,8 +644,6 @@ body {
     height: 45px;
     background: url(/img/spks_logo.png) center 0 no-repeat;
     margin-left: -20px;
-    
-
 }
 
 .mob__spks__text {
@@ -642,14 +653,66 @@ body {
     margin-left: 65px;
     font-weight: 500;
     text-decoration: none;
-    
+    margin-bottom: 0;
+
+}
+
+.mob__razrabotano {
+    font-size: 12px;
+    font-weight: 350;
+    color: #c2c2c2;
+    margin-top: 10px;
+}
+
+.web__spks__footer a {
+    text-decoration: none;
+    color: #696969;
+
+    &:hover {
+        color: #8d8d8d;
+    }
+}
+
+.web__spks__footer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 65px;
+
 }
 
 // 
 
+.spks__footer a {
+    text-decoration: none;
+    color: #696969;
+
+    &:hover {
+        color: #8d8d8d;
+    }
+}
+
+.spks__footer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 65px;
+
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
+
+}
+
 .footer__block {
     background-color: #f9f9f9;
     padding: 35px;
+
+    @media screen and (max-width: 320px) {
+        padding: 15px;
+    }
 }
 
 .footer__logo {
@@ -663,6 +726,7 @@ body {
     height: 45px;
     background: url(/img/logo__sasp_grey.png) center 0 no-repeat;
     margin-left: -5px;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -673,6 +737,7 @@ body {
     color: #979695;
     margin-top: 55px;
     margin-bottom: 45px;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -680,6 +745,7 @@ body {
 
 .political__footer {
     color: #000;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -690,6 +756,7 @@ body {
     width: 50px;
     margin-top: 20px;
     margin-bottom: 15px;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -698,6 +765,7 @@ body {
 .prava__footer {
     font-size: 12px;
     color: #9c9c9c;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -708,6 +776,7 @@ body {
     text-transform: uppercase;
     color: #4f72ac;
     margin-bottom: 10px;
+
     @media screen and (max-width: 768px) {
         margin-top: 15px;
     }
@@ -738,6 +807,7 @@ body {
     height: 45px;
     background: url(/img/spks_logo.png) center 0 no-repeat;
     margin-left: -20px;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -750,7 +820,9 @@ body {
     color: #000;
     margin-left: 65px;
     font-weight: 500;
+    margin-bottom: 0;
     text-decoration: none;
+
     @media screen and (max-width: 320px) {
         display: none;
     }
@@ -780,6 +852,7 @@ body {
     padding: 0;
     color: #fff;
     text-align: right;
+
     a {
         text-decoration: none;
 
@@ -791,7 +864,7 @@ body {
     @media screen and (max-width: 320px) {
         background-color: #5e7daf;
         padding: 10px 25px;
-        margin-top: 10px;     
+        margin-top: 10px;
         border-radius: 3px;
         justify-content: center;
     }
@@ -807,14 +880,15 @@ body {
     margin-bottom: 0px;
 }
 
-.click__on__map_footer {   
+.click__on__map_footer {
     font-weight: 300;
 
     @media screen and (max-width: 320px) {
         font-size: 18px;
-       margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 }
+
 .email__link__footer {
     font-size: 14px;
     font-weight: 400;
@@ -830,6 +904,10 @@ body {
     font-size: 12px;
     font-weight: 350;
     color: #c2c2c2;
+
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 }
 
 // Документы
@@ -903,6 +981,10 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     color: #000;
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 15px;
+    }
 }
 
 .political__text__small {
@@ -911,4 +993,83 @@ body {
     color: #000;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+// Профстандарты в области сварки
+
+.box__standart {
+    box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
+    margin-top: 25px;
+    padding: 35px;
+    border-radius: 3px;
+    border: 1px solid #f3f3f3;
+
+    &:hover {
+        border: 1px solid rgb(199, 223, 255);
+        transition: 0.2s;
+    }
+}
+
+.header__standart {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.name__standart {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.info__standart {
+    font-size: 16px;
+    font-weight: 350;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.number__standart {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.box__standart__line__two {
+    padding: 70px 0px;
+}
+
+.download__standart {
+    background-color: rgb(206, 206, 206);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 10px;
+    a {
+        padding: 25px;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover{
+        background-color: rgb(155, 155, 155);
+        transition: 0.2s;
+    }
+}
+
+.right__column__header{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px 0px 0px;   
+}
+
+.list__service__column{
+    a{
+        text-decoration: none;      
+    }
+}
+
+.small__column__text{
+    font-size: 14px;
+    font-weight: 400; 
+    margin-bottom: 10px;     
 }

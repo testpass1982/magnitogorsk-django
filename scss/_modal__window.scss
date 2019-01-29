@@ -96,7 +96,7 @@ padding: 0;
 	padding: 75px 75px 0px;
 	// background-color: #838383;
 	@media screen and (max-width: 450px) {
-		padding: 35px 35px 15px;
+		padding: 35px 25px 15px;
     }
 }
 
@@ -104,7 +104,7 @@ padding: 0;
 	padding: 0px 75px 25px;
 	color: #000;	
 	@media screen and (max-width: 450px) {
-        padding: 0px 35px 15px;
+        padding: 0px 25px 15px;
     }
 }
 
@@ -125,6 +125,9 @@ padding: 0;
 	line-height: inherit;
 	padding: 1rem;
 	margin: 0;
+	@media screen and (max-width: 320px) {
+        margin-right: -25px;
+    }
 }
 
 
