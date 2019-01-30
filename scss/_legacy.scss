@@ -25,6 +25,7 @@ body {
     border: none;
     background: transparent;
     font-size: 14px;
+    padding: 0px;
 
     a {
         text-decoration: none;
@@ -36,8 +37,8 @@ body {
     margin-right: 5px;
 }
 
-.sider__bar{
-      position: sticky;
+.sider__bar {
+    position: sticky;
     top: 4rem;
     z-index: 1000;
     height: calc(45vh);
@@ -124,7 +125,7 @@ body {
         text-decoration: none;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 992px) {
         background-color: #5e7daf;
         padding: 10px 25px;
         margin-top: 10px;
@@ -163,10 +164,6 @@ body {
     left: 0;
     margin-top: 20px;
     background: url(/img/logo__sasp.png) center 0 no-repeat;
-
-    @media screen and (max-width: 576px) {
-        text-align: center;
-    }
 }
 
 
@@ -174,17 +171,17 @@ body {
 .sasp__text {
     margin-left: 80px;
     color: #002D41;
-    font-weight: 450;
-
-    @media screen and (max-width: 576px) {
-        text-align: left;
-    }
+    font-weight: 450;   
 }
 
 
 // Меню
 .box__line__menu {
     background-color: #ecf5fe;
+}
+
+.system__button {
+    padding: 0px 30px;
 }
 
 .system__button a {
@@ -314,9 +311,6 @@ body {
 
 // Контентная часть left column
 
-.box__content {
-    background-color: #fcfcfc;
-}
 
 .header__name {
     color: #000;
@@ -654,6 +648,7 @@ body {
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 0;
+    margin-top: 10px;
 
 }
 
@@ -855,18 +850,20 @@ body {
 
     a {
         text-decoration: none;
-
-        @media screen and (max-width: 320px) {
-            color: #fff;
-        }
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 992px) {
         background-color: #5e7daf;
         padding: 10px 25px;
         margin-top: 10px;
         border-radius: 3px;
+        color: #fff;
         justify-content: center;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 
 }
@@ -981,7 +978,6 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     color: #000;
-
     @media screen and (max-width: 1199px) {
         margin-top: 15px;
     }
@@ -1011,8 +1007,8 @@ body {
 }
 
 .header__standart {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 350;
     margin-bottom: 10px;
 }
 
@@ -1044,32 +1040,150 @@ body {
     border-radius: 3px;
     padding: 10px;
     margin-top: 10px;
+
     a {
         padding: 25px;
         font-size: 14px;
         color: #fff;
         text-decoration: none;
     }
-    &:hover{
+
+    &:hover {
         background-color: rgb(155, 155, 155);
         transition: 0.2s;
     }
 }
 
-.right__column__header{
+.right__column__header {
     font-size: 18px;
     font-weight: 500;
-    padding: 25px 0px 0px;   
+    padding: 25px 0px 0px;
 }
 
-.list__service__column{
-    a{
-        text-decoration: none;      
+.list__service__column {
+    a {
+        text-decoration: none;
+        color: #000;
+
+        &:hover {
+            color: rgb(121, 121, 121);
+        }
     }
 }
 
-.small__column__text{
+.small__column__text {
     font-size: 14px;
-    font-weight: 400; 
-    margin-bottom: 10px;     
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+// Услуги центра (внутреннее страницы)
+
+.header__service {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.trebovanie__left__column {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box__service__inside__pages {
+    border: 1px solid #f1f1f1;
+    padding: 10px 25px 25px;
+    @media screen and (max-width: 1199px) {
+        margin-top: 15px;
+    }
+}
+
+.trebovanie__list {
+    font-size: 14px;
+    margin-bottom: 0;
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.small__header__pages {
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 15px; 
+    color: #0066ac; 
+}
+
+
+.list__item__text{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.line__inside_pages{
+    border: 0.5px solid rgb(207, 207, 207);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.danger__text__pages{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0066ac;
+}
+
+.vazno__list__text{
+    font-size: 16px;
+    margin-bottom: 5px;  
+    margin-bottom: 10px;
+}
+
+.box__yellow_bg {
+    padding: 25px 25px;
+    background-color: rgba(236, 236, 236, 0.8);
+    font-size: 16px;
+}
+
+.specialist__text__small{
+    margin-bottom: 0;
+}
+
+
+.sider__bar__service__pages {
+    position: sticky;
+    top: 4rem;
+    z-index: 1000;
+    height: calc(55vh);
+}
+
+
+.button__zayavka__inside__pages {
+    background-color: #3eb5f1;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 25px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #35a9e4;
+        transition: 0.2s;
+    }
+
+    &:active {
+        background-color: #2891c5;
+        transition: 0.2s;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }

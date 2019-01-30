@@ -5,6 +5,9 @@
     border-top: 1px solid #f5f5f5;
     // border-radius: 7px;
     margin-bottom: 25px;
+    @media screen and (max-width: 992px) {
+        padding: 15px;
+    }
     
 }
 
@@ -75,13 +78,13 @@
 }
 
 .dropdown-menu {
-    margin-top: 20px;
+    margin-top: 22px;
     color: #ecf5fe;    
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
-    line-height: 2;
+   
     border: none;
     border-radius: 0px;
-
+text-transform: initial;
     @media screen and (max-width: 320px) {
         font-size: 12px;
         color: #fff;
@@ -96,8 +99,7 @@
 
 .dropdown-item.active,
 .dropdown-item:active {
-    background-color: #6485a7;
-    ;
+    background-color: #585858;  
 }
 
 .navbar-toggler {
