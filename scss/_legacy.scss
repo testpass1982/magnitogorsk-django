@@ -164,14 +164,32 @@ body {
     left: 0;
     margin-top: 20px;
     background: url(/img/logo__sasp.png) center 0 no-repeat;
+    @media screen and (max-width: 576px) {
+        display: none;
+      }   
 }
 
+.mob__logo__sasp{
+    margin-bottom: 5px;
+}
+
+.mob__sasp{
+   display: none; 
+   font-size: 14px;
+    @media screen and (max-width: 576px) {
+        display: block;
+       
+      } 
+}
 
 
 .sasp__text {
     margin-left: 80px;
     color: #002D41;
-    font-weight: 450;   
+    font-weight: 450;
+    @media screen and (max-width: 576px) {
+      display: none;
+    }   
 }
 
 
@@ -264,6 +282,7 @@ body {
 .online__zayavka__button {
     vertical-align: middle;
     text-align: center;
+    margin-top: 15px;
 }
 
 .button__zayavka {
@@ -294,10 +313,10 @@ body {
 
 .naks__web a {
     text-decoration: none;
-    color: #696969;
+    color: #0173c1;
 
     &:hover {
-        color: #8d8d8d;
+        color: #0087e0;
     }
 }
 
@@ -508,7 +527,7 @@ body {
     color: #0066ac;
     font-size: 16px;
     float: right;
-    text-align: right;
+    text-align: right;    
 
     @media screen and (max-width: 320px) {
         margin-top: 15px;
@@ -527,6 +546,9 @@ body {
     margin-bottom: 50px;
     background-color: #fff;
     padding: 25px;
+    a{
+        text-decoration: none;
+    }
 }
 
 .search__text__box {
@@ -1186,4 +1208,21 @@ body {
         outline: none;
         box-shadow: none;
     }
+}
+
+// Страница услуг 2 "Лаборатория"
+
+.medium__header__text{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list__item__text__laboratoriya{
+    font-size: 16px;
+    line-height: 1.2;   
+}
+
+.medium__header__text__svidetelstva{
+    font-size: 16px;
+    font-weight: 400;
 }
