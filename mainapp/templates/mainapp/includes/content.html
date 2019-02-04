@@ -1,3 +1,4 @@
+{% load static %}
 <div class="box__content">
     <div class="container">
         <div class="row">
@@ -37,13 +38,13 @@
                     </p>
                     <main role="main">
                         <p class="imglist d-flex">
-                            <a href="/img/img_at.jpg" class="img_box" data-fancybox="group1" data-type="image">
-                                <img src="/img/img_at.jpg" class="img-fluid">
+                            <a href="{% static 'img/img_at.jpg' %}" class="img_box" data-fancybox="group1" data-type="image">
+                                <img src="{% static 'img/img_at.jpg' %}" class="img-fluid">
                             </a>
-                            <a href="/img/img_at2.jpg" class="img_box" data-fancybox="group1" data-type="image">
-                                <img src="/img/img_at2.jpg" class="img-fluid">
+                            <a href="{% static 'img/img_at2.jpg' %}" class="img_box" data-fancybox="group1" data-type="image">
+                                <img src="{% static 'img/img_at2.jpg' %}" class="img-fluid">
                             </a>
-                            <a href="/img/img_at2.jpg" class="img_box" data-fancybox="group1" data-type="image">
+                            <a href="{% static 'img/img_at2.jpg' %}" class="img_box" data-fancybox="group1" data-type="image">
                                 <img src="/img/img_at2.jpg" class="img-fluid">
                             </a>
                             <a href="/img/img_at2.jpg" class="img_box" data-fancybox="group1" data-type="image">
