@@ -123,7 +123,7 @@ body {
   height: 45px;
   left: 0;
   margin-top: 20px;
-  background: url(/img/logo__sasp.png) center 0 no-repeat; }
+  background: url(/static/img/logo__sasp.png) center 0 no-repeat; }
   @media screen and (max-width: 576px) {
     .sasp__logo::before {
       display: none; } }
@@ -467,7 +467,7 @@ body {
   position: absolute;
   width: 85px;
   height: 45px;
-  background: url(/img/logo__sasp_grey.png) center 0 no-repeat;
+  background: url(/static/img/logo__sasp_grey.png) center 0 no-repeat;
   margin-left: -5px; }
 
 .mob__sasp__grey__text {
@@ -499,7 +499,7 @@ body {
   position: absolute;
   width: 85px;
   height: 45px;
-  background: url(/img/spks_logo.png) center 0 no-repeat;
+  background: url(/static/img/spks_logo.png) center 0 no-repeat;
   margin-left: -20px; }
 
 .mob__spks__text {
@@ -562,7 +562,7 @@ body {
   position: absolute;
   width: 85px;
   height: 45px;
-  background: url(/img/logo__sasp_grey.png) center 0 no-repeat;
+  background: url(/static/img/logo__sasp_grey.png) center 0 no-repeat;
   margin-left: -5px; }
   @media screen and (max-width: 320px) {
     .sasp__grey__logo::before {
@@ -628,7 +628,7 @@ body {
   position: absolute;
   width: 85px;
   height: 45px;
-  background: url(/img/spks_logo.png) center 0 no-repeat;
+  background: url(/static/img/spks_logo.png) center 0 no-repeat;
   margin-left: -20px; }
   @media screen and (max-width: 320px) {
     .spks::before {
@@ -756,7 +756,7 @@ body {
   width: 45px;
   height: 45px;
   left: 0;
-  background: url(/img/icon__file-01.png) center 0 no-repeat; }
+  background: url(/static/img/icon__file-01.png) center 0 no-repeat; }
 
 .bd-sidebar {
   position: sticky;
@@ -1322,7 +1322,8 @@ input ~ label[for="sogl"] {
 .choose__item .items {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 .choose__item .items li {
   display: block;

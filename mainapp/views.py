@@ -6,3 +6,6 @@ def index(request):
 
 def docs(request):
     return render(request, 'mainapp/doc.html')
+    
+def laboratoriya(request):
+    return render(request, 'mainapp/laboratoriya.html')
