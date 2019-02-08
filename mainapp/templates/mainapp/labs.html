@@ -1,5 +1,5 @@
 {% extends 'mainapp/base.html' %}
-
+{% load static %}
 
 {% block content %}
 <div class="container">
@@ -140,8 +140,8 @@
                     </p>
                     <main role="main">
                         <p class="imglist d-flex">
-                            <a href="/img/img_ats7.jpg" class="img_box" data-fancybox="group1" data-type="image">
-                                <img src="/img/img_ats7.jpg" class="img-fluid">
+                            <a href="{% static 'img/img_ats7.jpg' %}" class="img_box" data-fancybox="group1" data-type="image">
+                                <img src="{% static 'img/img_ats7.jpg' %}" class="img-fluid">
                             </a>
                             <a href="/img/img_ats6.jpg" class="img_box" data-fancybox="group1" data-type="image">
                                 <img src="/img/img_ats6.jpg" class="img-fluid">
